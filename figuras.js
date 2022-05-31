@@ -26,6 +26,18 @@ console.group("Triángulos")
 //console.log("Los lados de mi triángulo miden " + ladoTriangulo1 + " cm, " + ladoTriangulo2 + " cm y " + baseTriangulo + " cm.");
 //console.log("La altura del triángulo es " + alturaTriangulo + " centímetros");
 
+function alturaTriangulo(lado1, lado2, base) {
+    if (lado1 != lado2){
+        console.error("El lado a debe ser igual al lado b")
+}
+
+    else {
+        const lado = lado1;
+
+    return const altura = Math.sqrt(lado**2 - (base**2) / 4);
+}
+}
+
 function perimetroTriangulo(lado1, lado2, base) {
     return lado1 + lado2 + base;
 }
@@ -34,6 +46,8 @@ function perimetroTriangulo(lado1, lado2, base) {
 function areaTriangulo(base, altura) {
     return (base * altura) / 2;
 }
+
+
 
 //console.log("El área del triángulo es " + areaTriangulo + " centímetros cuadrados");
 console.groupEnd;
@@ -65,6 +79,22 @@ function areaCirculo(radio) {
 }
 //console.log("El área del círculo es " + areaCirculo + " cm cuadrados");
 console.groupEnd;
+
+// Interacción con HTML
+
+function calcularPerimetroCuadrado() {
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+    const perimetro = perimetroCuadrado(value);
+   
+}
+
+function calcularAreaCuadrado() {
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+    const area = areaCuadrado(value);
+    
+}
 
 
 
